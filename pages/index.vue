@@ -13,14 +13,15 @@
             <h1
               class="text-gray-100 text-4xl tablet:text-6xl font-bold leading-none"
             >
-              Data that matter.
+              Mississippi Succeeds Report Card
             </h1>
             <h1
               class="text-gray-100 text-base tablet:text-2xl font-semibold leading-none mb-4"
             >
               Search for school or district data.
             </h1>
-            <div
+            <input class="form-input mt-1 block w-full" label="search..." />
+            <!-- <div
               class="bg-white px-4 pt-2 pb-4 rounded-lg w-full flex flex-col"
             >
               <div class="flex items-center w-full">
@@ -45,7 +46,7 @@
                   placeholder="Jane Doe"
                 />
               </div>
-            </div>
+            </div> -->
 
             <!-- <label class="inline-flex items-center relative">
               <select class="form-select block rounded-l-lg rounded-r-none">
@@ -98,6 +99,12 @@
                       <h1 class="text-base leading-none">Jackson, MS</h1>
                     </div>
                   </div>
+                  <n-link
+                    class="py-3 px-6 bg-gray-900 text-white rounded-lg"
+                    to="fullsearch"
+                  >
+                    Click here for fancy search
+                  </n-link>
                   <!-- end block -->
                 </div>
               </div>
