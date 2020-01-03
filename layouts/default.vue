@@ -7,7 +7,7 @@
         </h1>
       </div>
     </div>
-    <div class="py-3 flex w-full bg-gray-900 items-center">
+    <div class="py-1 tablet:py-3 flex w-full bg-gray-900 items-center">
       <div class="container">
         <div class="flex flex-row items-center">
           <img
