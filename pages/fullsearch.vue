@@ -211,7 +211,7 @@ export default {
     handleClick() {
       this.$store.commit('entities/add', this.selectedEntities)
       this.$router.push({
-        path: 'compare'
+        path: '/compare'
       })
     }
   },
