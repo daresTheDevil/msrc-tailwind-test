@@ -105,8 +105,11 @@
               </n-link>
             </label> -->
             <div class="block relative">
-              <div class="mt-2 absolute left-0 origin-top-left w-full">
-                <div class="bg-white rounded-lg shadow-lg">
+              <div
+                class="mt-2 absolute left-0 origin-top-left w-full overflow-auto"
+                style="height: 400px;"
+              >
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                   <!-- block -->
                   <div
                     class="w-full border-b last:border-none px-4 py-3 cursor-pointer"
@@ -157,6 +160,239 @@
         </div>
       </div>
     </div>
+    <section class="bg-gray-200 py-24 border-b">
+      <div class="container">
+        <div class="flex flex-col w-full tablet:w-1/2 mx-auto">
+          <h1 class="text-3xl font-medium">
+            Statewide Accountability Performance Results
+          </h1>
+
+          <p class="leading-snug">
+            The Mississippi Statewide Accountability System is a single “A”
+            through “F” school and district accountability system. Grades are
+            based on student achievement, student growth, student participation
+            in testing, and other academic measures.
+          </p>
+        </div>
+        <div class="flex flex-wrap mt-12">
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-teal-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Mississippi Average</h1>
+
+                <p class="text-sm leading-snug">
+                  Learn more about the state results and subgroup breakdowns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-blue-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Data Map</h1>
+
+                <p class="text-sm leading-snug">
+                  View performance measures on a map.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-red-600 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">All Data</h1>
+
+                <p class="text-sm leading-snug">
+                  Download the full dataset for the current year in spreadsheet
+                  format or select prior year below.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-cyan-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Student Group Data</h1>
+
+                <p class="text-sm leading-snug">
+                  Review academic performance by various student groups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-yellow-300 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Video Overview</h1>
+
+                <p class="text-sm leading-snug">
+                  A quick video with highlights of the Mississippi Succeeds
+                  Report Card.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-red-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">User Guide</h1>
+
+                <p class="text-sm leading-snug">
+                  Get an in-depth understanding of report card details.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 py-24 border-b">
+      <div class="container">
+        <div class="flex flex-col w-full tablet:w-1/2 mx-auto">
+          <h1 class="text-3xl font-medium">
+            The Data
+          </h1>
+
+          <p class="leading-snug">
+            The Data Every school and district has an overall accountability
+            grade and score. The data include assessment, teacher, and
+            environment data that gives an overview of school performance with
+            the ability to link to more detailed data.
+          </p>
+        </div>
+        <div class="flex flex-wrap mt-12">
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-teal-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Mississippi Average</h1>
+
+                <p class="text-sm leading-snug">
+                  Learn more about the state results and subgroup breakdowns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-blue-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Data Map</h1>
+
+                <p class="text-sm leading-snug">
+                  View performance measures on a map.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="w-12 h-12 bg-red-600 rounded-full" />
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">All Data</h1>
+
+                <p class="text-sm leading-snug">
+                  Download the full dataset for the current year in spreadsheet
+                  format or select prior year below.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-cyan-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Student Group Data</h1>
+
+                <p class="text-sm leading-snug">
+                  Review academic performance by various student groups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-yellow-300 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">Video Overview</h1>
+
+                <p class="text-sm leading-snug">
+                  A quick video with highlights of the Mississippi Succeeds
+                  Report Card.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-full tablet:w-1/2 desktop:w-1/3 p-2">
+            <div
+              class="flex bg-white w-full border shadow px-4 py-2 rounded-lg"
+            >
+              <div class="flex w-1/6">
+                <div class="flex h-12 w-12 bg-red-500 rounded-full"></div>
+              </div>
+              <div class="flex w-5/6 flex-col ml-4">
+                <h1 class="text-2xl font-medium">User Guide</h1>
+
+                <p class="text-sm leading-snug">
+                  Get an in-depth understanding of report card details.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -174,9 +410,12 @@ export default {
   },
   methods: {
     handleClick() {
+      const entities = this.selectedEntities.map((item) => item.entityId)
+      console.log('entities', entities)
       this.$store.commit('entities/add', this.selectedEntities)
       this.$router.push({
-        path: '/compare'
+        name: 'entities',
+        query: { entities: entities.join(',') }
       })
     },
     onChange() {

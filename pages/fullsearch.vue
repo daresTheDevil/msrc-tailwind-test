@@ -200,6 +200,14 @@ export default {
     }
   },
   methods: {
+    handleClick() {
+      const entities = this.selectedEntities.map((item) => item.entityId)
+      this.$store.commit('entities/add', this.selectedEntities)
+      this.$router.push({
+        name: 'entities',
+        query: { entities: entities.join(',') }
+      })
+    },
     onChange() {
       this.results = this.entities.filter(
         (item) =>
@@ -207,12 +215,6 @@ export default {
             .toLowerCase()
             .indexOf(this.search.toLowerCase()) > -1
       )
-    },
-    handleClick() {
-      this.$store.commit('entities/add', this.selectedEntities)
-      this.$router.push({
-        path: '/compare'
-      })
     }
   },
   async fetch({ store, params }) {

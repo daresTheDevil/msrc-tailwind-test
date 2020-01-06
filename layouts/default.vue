@@ -1,13 +1,13 @@
 <template>
   <div class="bg-gray-100">
-    <div class="flex py-1 w-full bg-gray-900">
+    <!-- <div class="flex py-1 w-full bg-gray-900">
       <div class="container">
         <h1 class="text-xs text-gray-100">
           An official site of the Mississippi Department of Education
         </h1>
       </div>
-    </div>
-    <div class="py-1 tablet:py-3 flex w-full bg-gray-900 items-center">
+    </div> -->
+    <div class="py-3 tablet:py-4 flex w-full bg-gray-900 items-center">
       <div class="container">
         <div class="flex flex-row items-center">
           <img
