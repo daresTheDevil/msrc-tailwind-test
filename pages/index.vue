@@ -11,7 +11,7 @@
         <div class="flex justify-center">
           <div class="flex flex-col z-10 w-full desktop:w-2/3">
             <h1
-              class="text-blue-400 tablet:text-gray-100 text-4xl tablet:text-6xl font-bold leading-none"
+              class="text-gray-100 text-4xl tablet:text-6xl font-bold leading-none"
             >
               Mississippi Succeeds Report Card
             </h1>
