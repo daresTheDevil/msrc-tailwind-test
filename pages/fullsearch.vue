@@ -180,28 +180,28 @@ export default {
     }),
     numDistricts() {
       if (this.results.length)
-        return this.results.filter((item) => item.entityType === 'District')
+        return this.results.filter((item) => item.EntityType === 'District')
       return 0
     },
     numSchools() {
       if (this.results.length)
-        return this.results.filter((item) => item.entityType === 'School')
+        return this.results.filter((item) => item.EntityType === 'School')
       return 0
     },
     lowStudents() {
       if (this.results.length)
-        return this.results.filter((item) => item.entityLevel === 600)
+        return this.results.filter((item) => item.EntityLevel === 600)
       return 0
     },
     highStudents() {
       if (this.results.length)
-        return this.results.filter((item) => item.entityLevel === 1000)
+        return this.results.filter((item) => item.EntityLevel === 1000)
       return 0
     }
   },
   methods: {
     handleClick() {
-      const entities = this.selectedEntities.map((item) => item.entityId)
+      const entities = this.selectedEntities.map((item) => item.EntityId)
       this.$store.commit('entities/add', this.selectedEntities)
       this.$router.push({
         name: 'entities',
@@ -211,7 +211,7 @@ export default {
     onChange() {
       this.results = this.entities.filter(
         (item) =>
-          item.entityDisplayName
+          item.EntityDisplayName
             .toLowerCase()
             .indexOf(this.search.toLowerCase()) > -1
       )
@@ -219,7 +219,7 @@ export default {
   },
   async fetch({ store, params }) {
     const { data } = await axios.get(
-      'https://davidbkay.github.io/msrc-serverless-test/entities/2017.json'
+      'https://raw.githubusercontent.com/davidbkay/msrc-serverless-test/master/2017/entities/entities.json'
     )
     console.log('data', data)
     store.commit('entities/add', data)
