@@ -119,7 +119,7 @@
                 <div
                   class="tablet:bg-white tablet:border w-full rounded-lg border-b last:border-none shadow-none p-4 cursor-pointer mb-2"
                   v-for="item in results"
-                  :key="item.entityId"
+                  :key="item.EntityId"
                 >
                   <div class="flex items-center justify-between">
                     <div class="flex items-center">
@@ -130,7 +130,7 @@
                           <h1
                             class="text-2xl tablet:text-3xl font-bold text-gray-100 tracking-none"
                           >
-                            {{ item.entityGrade[0].toUpperCase() }}
+                            {{ item.EntityGrade[0].toUpperCase() }}
                           </h1>
                         </div>
                       </div>
@@ -139,10 +139,10 @@
                         <h1
                           class="text-base tablet:text-xl font-semibold tracking-tight leading-none"
                         >
-                          {{ item.entityDisplayName }}
+                          {{ item.EntityDisplayName }}
                         </h1>
                         <h1 class="text-sm tablet:text-base leading-none">
-                          {{ item.entityCity }}, MS
+                          {{ item.EntityCity }}, MS
                         </h1>
                       </div>
                     </div>
