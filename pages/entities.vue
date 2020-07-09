@@ -6,19 +6,19 @@
       <div
         class="p-2 flex w-full tablet:w-1/2 desktop:w-1/3"
         v-for="item in entities"
-        :key="item.entityId"
+        :key="item.EntityId"
       >
         <div class="flex flex-col w-full bg-white rounded-lg shadow p-2">
           <p class="text-2xl font-medium text-gray-800 leading-none">
-            {{ item.entityDisplayName }}
+            {{ item.EntityDisplayName }}
           </p>
           <div class="flex flex-col my-4">
             <span class="text-gray-700 leading-none">{{
-              item.entityAddress
+              item.EntityAddress
             }}</span>
             <span class="text-gray-700 leading-none">
-              {{ item.entityCity }}, {{ item.entityState }}
-              {{ item.entityZip }}
+              {{ item.EntityCity }}, {{ item.EntityState }}
+              {{ item.EntityZip }}
             </span>
           </div>
         </div>
@@ -508,37 +508,37 @@ export default {
   methods: {
     mathProficiency(entity) {
       const fact = this.facts.filter(
-        (item) => item.EntityId === entity.entityId && item.Subgroup === 'All'
+        (item) => item.EntityId === entity.EntityId && item.Subgroup === 'All'
       )
       return fact[0].MathProficiency
     },
     englishProficiency(entity) {
       const fact = this.facts.filter(
-        (item) => item.EntityId === entity.entityId && item.Subgroup === 'All'
+        (item) => item.EntityId === entity.EntityId && item.Subgroup === 'All'
       )
       return fact[0].EnglishProficiency
     },
     historyProficiency(entity) {
       const fact = this.facts.filter(
-        (item) => item.EntityId === entity.entityId && item.Subgroup === 'All'
+        (item) => item.EntityId === entity.EntityId && item.Subgroup === 'All'
       )
       return fact[0].HistoryProficiency
     },
     scienceProficiency(entity) {
       const fact = this.facts.filter(
-        (item) => item.EntityId === entity.entityId && item.Subgroup === 'All'
+        (item) => item.EntityId === entity.EntityId && item.Subgroup === 'All'
       )
       return fact[0].ScienceProficiency
     },
     mathGrowth(entity) {
       const fact = this.facts.filter(
-        (item) => item.EntityId === entity.entityId && item.Subgroup === 'All'
+        (item) => item.EntityId === entity.EntityId && item.Subgroup === 'All'
       )
       return fact[0].MathGrowth
     },
     englishGrowth(entity) {
       const fact = this.facts.filter(
-        (item) => item.EntityId === entity.entityId && item.Subgroup === 'All'
+        (item) => item.EntityId === entity.EntityId && item.Subgroup === 'All'
       )
       return fact[0].EnglishGrowth
     },
@@ -579,7 +579,7 @@ export default {
     )
     const entities = query.entities.split(',')
     console.log('entities', entities)
-    // const entities = store.state.entities.entities.map((item) => item.entityId)
+    // const entities = store.state.entities.entities.map((item) => item.EntityId)
     const filteredFacts = data.filter(
       (item) => entities.includes(item.EntityId) && item.Subgroup === 'All'
     )
