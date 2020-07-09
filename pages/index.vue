@@ -429,7 +429,8 @@ export default {
   },
   async fetch({ store, params }) {
     const { data } = await axios.get(
-      'https://github.com/davidbkay/msrc-serverless-test/2017/entities.json'
+      'https://raw.githubusercontent.com/davidbkay/msrc-serverless-test/master/2017/entities/entities.json'
+      // 'https://github.com/davidbkay/msrc-serverless-test/2017/entities.json'
     )
     store.commit('entities/add', data)
     // store.commit('auth/add', data.results[0])
